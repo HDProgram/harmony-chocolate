@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Harmony"
+      content="Treat yourself or a loved one to our finest ingredients for a moment of pure delight!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/logo/logo.svg" type="image/svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>HARMONY CHOCOLATE</title>
+    <style>
+      /* Header fixes and dark mode styles */
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+      
+      .header-navigation {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      
+      .header-navigation-list {
+        display: flex;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .social-buttons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      
+      .social-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: transparent;
+        color: #111;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      
+      .social-button:hover {
+        background-color: #fd9222;
+        color: #fff;
+      }
+      
+      .theme-toggle-button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #fd9222;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.3s;
+      }
+      
+      .theme-toggle-button:hover {
+        background-color: #e67e00;
+      }
+      
+      .theme-icon {
+        width: 20px;
+        height: 20px;
+      }
+      
+      /* Dark mode */
+      .dark-mode {
+        background-color: #1e1e1e;
+        color: #fff;
+      }
+      
+      .dark-mode .header {
+        background-color: #2a2a2a;
+      }
+      
+      .dark-mode .social-button {
+        color: #fff;
+      }
+      
+      .dark-mode .theme-toggle-button {
+        background-color: #fd9222;
+      }
+      
+      .dark-mode .theme-toggle-button:hover {
+        background-color: #ff8c00;
+      }
+      
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <!--Logo & navigation menu-->
+        <nav class="header-navigation">
+          <a class="header-logo" href="./index.html">
+            <span class="header-logo-accent">Harmony</span>Chocolate
+            <svg class="header-logo-icon" width="21" height="21">
+              <use href="./images/icons.svg#chocolate"></use>
+            </svg>
+          </a>
+          <ul class="header-navigation-list">
+            <li class="header-navigation-card">
+              <a class="header-navigation-link" href="./index.html">
+                <p class="header-navigation-text">Home</p>
+              </a>
+            </li>
+            <li class="header-navigation-card">
+              <a class="header-navigation-link" href="#him">
+                <p class="header-navigation-text">How it's made?</p>
+              </a>
+            </li>
+            <li class="header-navigation-card">
+              <a class="header-navigation-link" href="#cil">
+                <p class="header-navigation-text">Chocolate is loved</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+   
+        <div class="social-buttons">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-button">
+            <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-button">
+            <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+            </svg>
+          </a>
+          <button class="theme-toggle-button" aria-label="Toggle theme" id="theme-toggle">
+            <svg class="theme-icon sun" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 17a5 5 0 100-10 5 5 0 000 10zm0-14a1 1 0 011 1v2a1 1 0 11-2 0V4a1 1 0 011-1zm0 16a1 1 0 011 1v2a1 1 0 11-2 0v-2a1 1 0 011-1zm-7-7a1 1 0 01-1-1 1 1 0 110-2h2a1 1 0 110 2H5zm16-1a1 1 0 01-1 1h-2a1 1 0 110-2h2a1 1 0 011 1zm-2.95-6.36a1 1 0 010 1.42L16.64 8a1 1 0 11-1.42-1.42l1.42-1.42a1 1 0 011.41 0zm-10.02 10.02a1 1 0 010 1.42l-1.42 1.42a1 1 0 11-1.42-1.42l1.42-1.42a1 1 0 011.42 0zm11.44 0l1.42 1.42a1 1 0 11-1.42 1.42l-1.42-1.42a1 1 0 111.42-1.42zM6.34 6.34a1 1 0 011.42-1.42l1.42 1.42a1 1 0 01-1.42 1.42L6.34 6.34z"/>
+            </svg>
+            <svg class="theme-icon moon hidden" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3a9 9 0 108.9 7.6 5.4 5.4 0 01-9.8-4.4A5.4 5.4 0 0114.3 2a9 9 0 00-2.3 1z"/>
+            </svg>
+            <span class="theme-toggle-text">Light Mode</span>
+          </button>
+        </div>
+      
+        <!--Menu hamburger-->
+        <button
+          class="header-hamburger-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-hamburger-icon" width="28" height="28">
+            <use href="./images/icons/hamburger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- The rest of the HTML code remains the same -->
+
+    <script>
+      // Theme toggle functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        const sunIcon = document.querySelector('.sun');
+        const moonIcon = document.querySelector('.moon');
+        const themeText = document.querySelector('.theme-toggle-text');
+        
+        themeToggle.addEventListener('click', function() {
+          if (html.classList.contains('light-mode')) {
+            html.classList.remove('light-mode');
+            html.classList.add('dark-mode');
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+            themeText.textContent = 'Dark Mode';
+          } else {
+            html.classList.remove('dark-mode');
+            html.classList.add('light-mode');
+            moonIcon.classList.add('hidden');
+            sunIcon.classList.remove('hidden');
+            themeText.textContent = 'Light Mode';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
+      
+        <!--Menu hamburger-->
+        <button
+          class="header-hamburger-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-hamburger-icon" width="28" height="28">
+            <use href="./images/icons/hamburger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!--
+        |============================
+        | SECTION 1. HERO
+        |============================
+      -->
+      <section class="hero">
+        <div class="hero-container container">
+          <h1 class="hero-header">
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
+          </h1>
+          <div class="hero-buttons-container">
+            <button class="hero-buy-button" type="button">Buy now</button>
+<!-- HTML for the Buy Now Popup -->
+<div class="buy-now-popup is-hidden" id="buy-now-popup">
+  <div class="buy-now-modal">
+    <button class="buy-now-close-button" type="button" id="buy-now-close">
+      <svg class="modal-close-button-icon" width="24" height="24">
+        <use href="./images/icons.svg#cross"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now-header header-two">
+      Recommended <span class="text-accent">Chocolates</span>
+    </h2>
+    <div class="recommended-chocolates">
+      <!-- Chocolate Item 1 -->
+      <div class="chocolate-item">
+        <img 
+          class="chocolate-image" 
+          src="./images/ingredients/img01@1x.png" 
+          srcset="./images/ingredients/img01@1x.png 1x, ./images/ingredients/img01@2x.png 2x" 
+          alt="Milk Chocolate Bar" 
+          width="120" 
+          height="100"
+        />
+        <div class="chocolate-details">
+          <h3 class="chocolate-name">Classic Milk Chocolate</h3>
+          <p class="chocolate-price">₹250</p>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="milk-chocolate">-</button>
+            <span class="quantity-display" data-id="milk-chocolate">0</span>
+            <button class="quantity-btn plus" data-id="milk-chocolate">+</button>
+          </div>
+          <button class="add-to-cart-button" data-id="milk-chocolate">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- Chocolate Item 2 -->
+      <div class="chocolate-item">
+        <img 
+          class="chocolate-image" 
+          src="./images/ingredients/elachi.png" 
+          srcset="./images/ingredients/elachi.png 1x, ./images/ingredients/elachi1.png 2x" 
+          alt="Elaichi Chocolate" 
+          width="120" 
+          height="100"
+        />
+        <div class="chocolate-details">
+          <h3 class="chocolate-name">Elaichi Chocolate</h3>
+          <p class="chocolate-price">₹300</p>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="elaichi-chocolate">-</button>
+            <span class="quantity-display" data-id="elaichi-chocolate">0</span>
+            <button class="quantity-btn plus" data-id="elaichi-chocolate">+</button>
+          </div>
+          <button class="add-to-cart-button" data-id="elaichi-chocolate">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- Chocolate Item 3 -->
+      <div class="chocolate-item">
+        <img 
+          class="chocolate-image" 
+          src="./images/ingredients/dalchini.png" 
+          srcset="./images/ingredients/dalchini.png 1x, ./images/ingredients/dalchini1.png 2x" 
+          alt="Daalchini Chocolate" 
+          width="120" 
+          height="100"
+        />
+        <div class="chocolate-details">
+          <h3 class="chocolate-name">Daalchini Chocolate</h3>
+          <p class="chocolate-price">₹280</p>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="daalchini-chocolate">-</button>
+            <span class="quantity-display" data-id="daalchini-chocolate">0</span>
+            <button class="quantity-btn plus" data-id="daalchini-chocolate">+</button>
+          </div>
+          <button class="add-to-cart-button" data-id="daalchini-chocolate">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- Chocolate Item 4 -->
+      <div class="chocolate-item">
+        <img 
+          class="chocolate-image" 
+          src="./images/ingredients/freshberries.jpg" 
+          srcset="./images/ingredients/freshberries.jpg 1x, ./images/ingredients/freshberries1.jpg 2x" 
+          alt="Fresh Berries Chocolate" 
+          width="120" 
+          height="100"
+        />
+        <div class="chocolate-details">
+          <h3 class="chocolate-name">Fresh Berries Chocolate</h3>
+          <p class="chocolate-price">₹320</p>
+          <div class="quantity-controls">
+            <button class="quantity-btn minus" data-id="berries-chocolate">-</button>
+            <span class="quantity-display" data-id="berries-chocolate">0</span>
+            <button class="quantity-btn plus" data-id="berries-chocolate">+</button>
+          </div>
+          <button class="add-to-cart-button" data-id="berries-chocolate">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="cart-summary">
+        <div class="cart-info">
+          <p id="cart-count">Cart: 0 items</p>
+          <p id="cart-total">Total: ₹0</p>
+        </div>
+        <div class="cart-items-list" id="cart-items-list">
+          <!-- Cart items will be displayed here -->
+        </div>
+        <button class="checkout-button">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS for the Buy Now Popup -->
+<style>
+  .buy-now-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .buy-now-popup.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .buy-now-modal {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 32px;
+    max-width: 90%;
+    width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dark-mode .buy-now-modal {
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  
+  .buy-now-close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-now-close-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .dark-mode .buy-now-close-button {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode .buy-now-close-button:hover {
+    background-color: #3a3a3a;
+  }
+  
+  .buy-now-header {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+  
+  .recommended-chocolates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .chocolate-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+  }
+  
+  .chocolate-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-mode .chocolate-item {
+    background-color: #383838;
+  }
+  
+  .chocolate-image {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .chocolate-details {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .chocolate-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .chocolate-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fd9222;
+    margin-bottom: 12px;
+  }
+  
+  .dark-mode .chocolate-price {
+    color: #ffb86c;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  
+  .quantity-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .quantity-btn.minus {
+    color: #ff6b6b;
+  }
+  
+  .quantity-btn.plus {
+    color: #4CAF50;
+  }
+  
+  .quantity-display {
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  .add-to-cart-button {
+    background-color: #fd9222;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #e67e00;
+  }
+  
+  .add-to-cart-button.added {
+    background-color: #4CAF50;
+  }
+  
+  .cart-summary {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .dark-mode .cart-summary {
+    border-color: #444;
+  }
+  
+  .cart-info {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #cart-count, #cart-total {
+    margin: 4px 0;
+  }
+  
+  .cart-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  .dark-mode .cart-items-list {
+    background-color: #333;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .dark-mode .cart-item {
+    background-color: #444;
+  }
+  
+  .checkout-button {
+    background-color: #fd9222;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+  }
+  
+  .checkout-button:hover {
+    background-color: #e67e00;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .recommended-chocolates {
+      grid-template-columns: 1fr;
+    }
+    
+    .chocolate-item {
+      flex-direction: row;
+      text-align: left;
+      align-items: center;
+    }
+    
+    .chocolate-image {
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+    
+    .chocolate-details {
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .buy-now-modal {
+      padding: 24px 16px;
+    }
+    
+    .chocolate-item {
+      flex-direction: column;
+    }
+    
+    .chocolate-image {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+    
+    .chocolate-details {
+      text-align: center;
+    }
+  }
+</style>
+
+<!-- JavaScript for the Buy Now Popup functionality -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const buyNowButton = document.querySelector('.hero-buy-button');
+    const buyNowPopup = document.getElementById('buy-now-popup');
+    const closeBuyNowPopup = document.getElementById('buy-now-close');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+    const plusButtons = document.querySelectorAll('.quantity-btn.plus');
+    const minusButtons = document.querySelectorAll('.quantity-btn.minus');
+    const quantityDisplays = document.querySelectorAll('.quantity-display');
+    const cartCountElement = document.getElementById('cart-count');
+    const cartTotalElement = document.getElementById('cart-total');
+    const cartItemsList = document.getElementById('cart-items-list');
+    
+    // Products data
+    const products = {
+      'milk-chocolate': { name: 'Classic Milk Chocolate', price: 250 },
+      'elaichi-chocolate': { name: 'Elaichi Chocolate', price: 300 },
+      'daalchini-chocolate': { name: 'Daalchini Chocolate', price: 280 },
+      'berries-chocolate': { name: 'Fresh Berries Chocolate', price: 320 }
+    };
+    
+    // Shopping cart
+    const cart = {
+      items: {},
+      count: 0,
+      total: 0,
+      
+      addItem(productId) {
+        if (!this.items[productId]) {
+          this.items[productId] = {
+            quantity: 0,
+            ...products[productId]
+          };
+        }
+        
+        this.items[productId].quantity += 1;
+        this.count += 1;
+        this.total += products[productId].price;
+        this.updateDisplay();
+        this.updateQuantityDisplay(productId);
+      },
+      
+      removeItem(productId) {
+        if (this.items[productId] && this.items[productId].quantity > 0) {
+          this.items[productId].quantity -= 1;
+          this.count -= 1;
+          this.total -= products[productId].price;
+          
+          if (this.items[productId].quantity === 0) {
+            delete this.items[productId];
+          }
+          
+          this.updateDisplay();
+          this.updateQuantityDisplay(productId);
+        }
+      },
+      
+      updateQuantityDisplay(productId) {
+        const quantityDisplay = document.querySelector(`.quantity-display[data-id="${productId}"]`);
+        if (quantityDisplay) {
+          quantityDisplay.textContent = this.items[productId] ? this.items[productId].quantity : 0;
+        }
+      },
+      
+      updateDisplay() {
+        cartCountElement.textContent = `Cart: ${this.count} item${this.count !== 1 ? 's' : ''}`;
+        cartTotalElement.textContent = `Total: ₹${this.total}`;
+        
+        // Update cart items list
+        cartItemsList.innerHTML = '';
+        
+        for (const [productId, item] of Object.entries(this.items)) {
+          if (item.quantity > 0) {
+            const cartItemElement = document.createElement('div');
+            cartItemElement.className = 'cart-item';
+            cartItemElement.innerHTML = `
+              <span>${item.name} x ${item.quantity}</span>
+              <span>₹${item.price * item.quantity}</span>
+            `;
+            cartItemsList.appendChild(cartItemElement);
+          }
+        }
+      }
+    };
+    
+    // Open popup when Buy Now button is clicked
+    if (buyNowButton) {
+      buyNowButton.addEventListener('click', function() {
+        buyNowPopup.classList.remove('is-hidden');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      });
+    }
+    
+    // Close popup when close button is clicked
+    closeBuyNowPopup.addEventListener('click', function() {
+      buyNowPopup.classList.add('is-hidden');
+      document.body.style.overflow = ''; // Re-enable scrolling
+    });
+    
+    // Close popup when clicking outside the modal
+    buyNowPopup.addEventListener('click', function(event) {
+      if (event.target === buyNowPopup) {
+        buyNowPopup.classList.add('is-hidden');
+        document.body.style.overflow = ''; // Re-enable scrolling
+      }
+    });
+    
+    // Add to cart button functionality
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const productId = this.getAttribute('data-id');
+        const quantityDisplay = document.querySelector(`.quantity-display[data-id="${productId}"]`);
+        const currentQuantity = parseInt(quantityDisplay.textContent);
+        
+        if (currentQuantity > 0) {
+          // Add the entire selected quantity to cart
+          for (let i = 0; i < currentQuantity; i++) {
+            cart.addItem(productId);
+          }
+          
+          // Reset the quantity display to 0
+          quantityDisplay.textContent = '0';
+          
+          // Visual feedback
+          this.classList.add('added');
+          this.textContent = 'Added to Cart';
+          
+          setTimeout(() => {
+            this.classList.remove('added');
+            this.textContent = 'Add to Cart';
+          }, 1500);
+        } else {
+          alert('Please select quantity first');
+        }
+      });
+    });
+    
+    // Plus button functionality
+    plusButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const productId = this.getAttribute('data-id');
+        const quantityDisplay = document.querySelector(`.quantity-display[data-id="${productId}"]`);
+        const currentQuantity = parseInt(quantityDisplay.textContent);
+        quantityDisplay.textContent = currentQuantity + 1;
+      });
+    });
+    
+    // Minus button functionality
+    minusButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const productId = this.getAttribute('data-id');
+        const quantityDisplay = document.querySelector(`.quantity-display[data-id="${productId}"]`);
+        const currentQuantity = parseInt(quantityDisplay.textContent);
+        if (currentQuantity > 0) {
+          quantityDisplay.textContent = currentQuantity - 1;
+        }
+      });
+    });
+    
+    // Initialize quantity displays to 0
+    quantityDisplays.forEach(display => {
+      display.textContent = '0';
+    });
+    
+    // Checkout button functionality
+    document.querySelector('.checkout-button').addEventListener('click', function() {
+      if (cart.count > 0) {
+        let orderSummary = 'Thank you for your order!\n\n';
+        orderSummary += 'Order Summary:\n';
+        
+        for (const [productId, item] of Object.entries(cart.items)) {
+          if (item.quantity > 0) {
+            orderSummary += `${item.name} x ${item.quantity}: ₹${item.price * item.quantity}\n`;
+          }
+        }
+        
+        orderSummary += `\nTotal: ₹${cart.total}`;
+        
+        alert(orderSummary);
+        
+        // Reset cart
+        cart.items = {};
+        cart.count = 0;
+        cart.total = 0;
+        cart.updateDisplay();
+        
+        // Reset all quantity displays
+        quantityDisplays.forEach(display => {
+          display.textContent = '0';
+        });
+      } else {
+        alert('Please add items to your cart first.');
+      }
+    });
+  });
+</script>
+            <a class="hero-navigation-link" href="#him">How it's made</a>
+            <button class="hero-scroll-button">
+              scroll down<span class="hero-scroll-circle">
+                <svg class="hero-scroll-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.00001 10.6667C7.84445 10.6667 7.68889 10.6 7.56445 10.4756L2.56445 5.47556C2.31556 5.22667 2.31556 4.83556 2.56445 4.58667C2.81334 4.33778 3.20445 4.33778 3.45334 4.58667L8.00001 9.13334L12.5467 4.58667C12.7956 4.33778 13.1867 4.33778 13.4356 4.58667C13.6845 4.83556 13.6845 5.22667 13.4356 5.47556L8.43556 10.4756C8.31112 10.6 8.15556 10.6667 8.00001 10.6667Z" fill="white"/>
+          </svg>
+              ></span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--
+        |============================
+        | SECTION 2. BENEFITS
+        |============================
+      -->
+        <section class="benefits" id="tb">
+    <div class="benefits-container container">
+      <h2 class="benefits-header"> <span class="text-accent">Why Choose HarmonyChocolate</span> </h2>
+      <ul class="benefits-list">
+        <li class="benefits-card">
+          <span class="benefits-card-circle">
+            <svg class="benefits-card-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.822 2.413l7.527 7.536c.12.121.218.26.289.415l.867-.867c.643-.643 1.687-.643 2.33 0l2.615 2.614c.643.644.643 1.688 0 2.331l-3.129 3.13-17.28 17.29c-.643.643-1.687.643-2.33 0l-2.616-2.615c-.643-.643-.643-1.687 0-2.33l.5-.5 3.536.707 16.008-16.009c.356-.357.356-.936 0-1.293l-8.82-8.82c-.121-.12-.26-.218-.414-.289l-.868.867c-.643.643-1.687.643-2.33 0l-2.615-2.614c-.643-.643-.643-1.687 0-2.33l3.1-3.101c.643-.643 1.687-.643 2.33 0l2.616 2.615z" fill="#FD9222"/>
+              <path d="M13.822 2.413l7.527 7.536c.12.121.218.26.289.415l.867-.867c.643-.643 1.687-.643 2.33 0l2.615 2.614c.643.644.643 1.688 0 2.331l-3.129 3.13-17.28 17.29c-.643.643-1.687.643-2.33 0l-2.616-2.615c-.643-.643-.643-1.687 0-2.33l.5-.5 3.536.707 16.008-16.009c.356-.357.356-.936 0-1.293l-8.82-8.82c-.121-.12-.26-.218-.414-.289l-.868.867c-.643.643-1.687.643-2.33 0l-2.615-2.614c-.643-.643-.643-1.687 0-2.33l3.1-3.101c.643-.643 1.687-.643 2.33 0l2.616 2.615z" fill="#FD9222"/>
+            </svg>
+          </span>
+          <h3 class="benefits-card-header">Unsurpassed taste</h3>
+          <p class="benefits-card-text">
+            Crafted with the finest quality cocoa beans and a dedication to
+            perfection, each bite is a decadent experience that simply
+            cannot be matched. Savor the richness and complexity of our
+            Unsurpassed Taste and discover a new level of chocolate bliss.
+          </p>
+        </li>
+        <li class="benefits-card">
+          <span class="benefits-card-circle">
+            <svg class="benefits-card-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" <svg xmlns="http://www.w3.org/2000/svg" fill="#FD9222" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+  <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+</svg>           </span>
+          <h3 class="benefits-card-header">Affordable price</h3>
+          <p class="benefits-card-text">
+            Indulge in high-quality chocolate without breaking the bank with
+            Harmony Chocolate's selection of affordable treats. Enjoy
+            mouth-watering truffles and velvety chocolate bars without
+            sacrificing taste or quality. Browse our selection and indulge in
+            affordable luxury today.
+          </p>
+        </li>
+        <li class="benefits-card">
+          <span class="benefits-card-circle">
+            <svg class="benefits-card-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.933 14.667c3.533 0 6.4-2.867 6.4-6.4s-2.867-6.4-6.4-6.4-6.4 2.867-6.4 6.4 2.867 6.4 6.4 6.4zM6.933 5.333c1.6 0 2.933 1.333 2.933 2.933s-1.333 2.933-2.933 2.933-2.933-1.333-2.933-2.933 1.333-2.933 2.933-2.933zM24.933 13.333c2.667 0 4.8-2.133 4.8-4.8 0-2.667-2.133-4.8-4.8-4.8s-4.8 2.133-4.8 4.8c0 2.667 2.133 4.8 4.8 4.8zM24.933 7.2c.8 0 1.333.533 1.333 1.333s-.533 1.333-1.333 1.333-1.333-.533-1.333-1.333.533-1.333 1.333-1.333zM15.733 27.333c3.067 0 5.6-2.533 5.6-5.6s-2.533-5.6-5.6-5.6-5.6 2.533-5.6 5.6 2.533 5.6 5.6 5.6zM15.733 19.6c1.133 0 2.133.933 2.133 2.133 0 1.133-.933 2.133-2.133 2.133-1.133 0-2.133-.933-2.133-2.133 0-1.133 1-2.133 2.133-2.133z" fill="#FD9222"/>
+              <path d="M4.533 30l2.267-5.333 2.267 5.333h4.267l-6.533-14.667-6.533 14.667h4.267zM23.2 22l1.467-2.933 1.467 2.933h2.8l-4.267-8.267-4.267 8.267h2.8z" fill="#FD9222"/>
+            </svg>
+          </span>
+          <h3 class="benefits-card-header">Own production</h3>
+          <p class="benefits-card-text">
+            We take pride in our own production process, ensuring that every
+            step is carefully crafted to perfection. From selecting the
+            finest ingredients to handcrafting each piece, our attention to
+            detail is evident in every bite.
+          </p>            
+         </li>
+          </ul>
+        </div>
+      </section>
+      <!--
+        |============================
+        | SECTION 3. INGREDIENTS
+        |============================ 
+      -->
+      <section class="section">
+        <div class="container">
+          <h2 class="ingredients-header header-two">
+            It all adds up to one exceptional
+            <span class="text-accent">taste</span> sensation
+          </h2>
+          <p class="ingredients-text">
+            At Simply Chocolate, we believe that the secret to exceptional
+            chocolate is in the details. From the sourcing of the finest
+            ingredients to the careful crafting of each individual piece, every
+            step of our process adds up to one exceptional taste sensation.
+          </p>
+          <ul class="ingredients-list">
+            <li class="ingredients-card ingredients-wrapper">
+              <img
+                class="ingredients-image image"
+                srcset="
+                  ./images/ingredients/img01@1x.png 1x,
+                  ./images/ingredients/img01@2x.png 2x
+                "
+                src="./images/ingredients/img01@1x.png"
+                alt="broken bar of chocolate"
+                width="224"
+                height="171"
+              />
+              <p class="ingredients-card-label">milk chocolate</p>
+              <div class="ingredients-card-overlay">
+                <h3 class="ingredients-overlay-header">Milk chocolate</h3>
+                <ul class="ingredients-overlay-list">
+                  <li class="ingredients-overlay-active-card">chocolate</li>
+                  <li class="ingredients-overlay-link-card">
+                    <a class="ingredients-overlay-link" href="#tb">the benefits</a>
+                  </li>
+                </ul>
+                <p class="ingredients-overlay-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
+            </li>
+            <li class="ingredients-card ingredients-wrapper">
+              <img
+                class="ingredients-image image"
+                srcset="
+                  ./images/ingredients/img02@1x.png 1x,
+                  ./images/ingredients/img02@2x.png 2x
+                "
+                src="./images/ingredients/img02@1x.png"
+                alt="bottle of milk"
+                width="224"
+                height="171"
+              />
+              <p class="ingredients-card-label">milk</p>
+              <div class="ingredients-card-overlay">
+                <h3 class="ingredients-overlay-header">milk</h3>
+                <ul class="ingredients-overlay-list">
+                  <li class="ingredients-overlay-active-card">milk</li>
+                  <li class="ingredients-overlay-link-card">
+                    <a class="ingredients-overlay-link" href="#tb">the benefits</a>
+                  </li>
+                </ul>
+                <p class="ingredients-overlay-text">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food. Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
+                </p>
+              </div>
+            </li>
+            <li class="ingredients-card ingredients-wrapper">
+              <img
+                class="ingredients-image image"
+                srcset="
+                  ./images/ingredients/img03@1x.png 1x,
+                  ./images/ingredients/img03@2x.png 2x
+                "
+                src="./images/ingredients/img03@1x.png"
+                alt="hazelnuts"
+                width="224"
+                height="171"
+              />
+              <p class="ingredients-card-label">nuts</p>
+              <div class="ingredients-card-overlay">
+                <h3 class="ingredients-overlay-header">nuts</h3>
+                <ul class="ingredients-overlay-list">
+                  <li class="ingredients-overlay-active-card">nuts</li>
+                  <li class="ingredients-overlay-link-card">
+                    <a class="ingredients-overlay-link" href="#tb">the benefits</a>
+                  </li>
+                </ul>
+                <p class="ingredients-overlay-text">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They're a good source of
+                  fiber, healthy fats, and plant protein. Plus, they're great on
+                  their own.
+                </p>
+              </div>
+            </li>
+            <li class="ingredients-card ingredients-wrapper">
+              <img
+                class="ingredients-image image"
+                srcset="
+                  ./images/ingredients/img04@1x.png 1x,
+                  ./images/ingredients/img04@2x.png 2x
+                "
+                src="./images/ingredients/img04@1x.png"
+                alt="cocoa beans"
+                width="224"
+                height="171"
+              />
+              <p class="ingredients-card-label">semi - sweet chocolate</p>
+              <div class="ingredients-card-overlay">
+                <h3 class="ingredients-overlay-header">
+                  semi - sweet chocolate
+                </h3>
+                <ul class="ingredients-overlay-list">
+                  <li class="ingredients-overlay-active-card">
+                    sweet chocolate
+                  </li>
+                  <li class="ingredients-overlay-link-card">
+                    <a class="ingredients-overlay-link" href="#tb">the benefits</a>
+                  </li>
+                </ul>
+                <p class="ingredients-overlay-text semi-sweet-text">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter and more mellow.
+                </p>
+              </div>
+            </li>
+            <li class="ingredients-card ingredients-wrapper">
+              <img
+                class="ingredients-image image"
+                srcset="
+                  ./images/ingredients/elachi.png 1x,
+                  ./images/ingredients/elachi1.png 2x
+                "
+                src="./images/ingredients/elachi.png"
+                alt="elaichi chocolate"
+                width="224"
+                height="171"
+              />
+              <p class="ingredients-card-label">elaichi chocolate</p>
+              <div class="ingredients-card-overlay">
+                <h3 class="ingredients-overlay-header">Elaichi Chocolate</h3>
+                <ul class="ingredients-overlay-list">
+                  <li class="ingredients-overlay-active-card">elaichi</li>
+                  <li class="ingredients-overlay-link-card">
+                    <a class="ingredients-overlay-link" href="#tb">the benefits</a>
+                  </li>
+                </ul>
+                <p class="ingredients-overlay-text">
+                  Elaichi chocolate blends the aromatic essence of cardamom with
+                  rich chocolate, creating a unique and flavorful experience. The
+                  subtle spice enhances the sweetness, offering a delightful
+                  fusion of Indian tradition and indulgence.
+                </p>
+              </div>
+            </li>
+            <li class="ingredients-card ingredients-wrapper">
+              <img
+                class="ingredients-image image"
+                srcset="
+                  ./images/ingredients/dalchini.png 1x,
+                  ./images/ingredients/dalchini1.png 2x
+                "
+                src="./images/ingredients/dalchini.png"
+                alt="daalchini chocolate"
+                width="224"
+                height="171"
+              />
+              <p class="ingredients-card-label">daalchini chocolate</p>
+              <div class="ingredients-card-overlay">
+                <h3 class="ingredients-overlay-header">Daalchini Chocolate</h3>
+                <ul class="ingredients-overlay-list">
+                  <li class="ingredients-overlay-active-card">daalchini</li>
+                  <li class="ingredients-overlay-link-card">
+                    <a class="ingredients-overlay-link" href="#tb">the benefits</a>
+                  </li>
+                </ul>
+                <p class="ingredients-overlay-text">
+                  Daalchini chocolate combines the warm, spicy notes of cinnamon
+                  with velvety chocolate. This exotic blend delivers a comforting
+                  and aromatic treat, perfect for those who love a hint of spice.
+                </p>
+              </div>
+            </li>
+            <li class="ingredients-card ingredients-wrapper">
+              <img
+                class="ingredients-image image"
+                srcset="
+                  ./images/ingredients/turmeric.png 1x,
+                  ./images/ingredients/turmeric1.png 2x
+                "
+                src="./images/ingredients/turmeric.png"
+                alt="turmeric chocolate"
+                width="224"
+                height="171"
+              />
+              <p class="ingredients-card-label">turmeric chocolate</p>
+              <div class="ingredients-card-overlay">
+                <h3 class="ingredients-overlay-header">Turmeric Chocolate</h3>
+                <ul class="ingredients-overlay-list">
+                  <li class="ingredients-overlay-active-card">turmeric</li>
+                  <li class="ingredients-overlay-link-card">
+                    <a class="ingredients-overlay-link" href="#tb">the benefits</a>
+                  </li>
+                </ul>
+                <p class="ingredients-overlay-text">
+                  Turmeric chocolate infuses the earthy, golden spice with smooth
+                  chocolate, offering a unique health-conscious treat. Known for
+                  its anti-inflammatory properties, turmeric adds a vibrant twist
+                  to this indulgent delight.
+                </p>
+              </div>
+            </li>
+            <li class="ingredients-card ingredients-wrapper">
+              <img
+                class="ingredients-image image"
+                srcset="
+                  ./images/ingredients/freshberries.jpg 1x,
+                  ./images/ingredients/freshberries1.jpg 2x
+                "
+                src="./images/ingredients/freshberries.jpg"
+                alt="fresh berries chocolate"
+                width="224"
+                height="171"
+              />
+              <p class="ingredients-card-label">fresh berries chocolate</p>
+              <div class="ingredients-card-overlay">
+                <h3 class="ingredients-overlay-header">Fresh Berries Chocolate</h3>
+                <ul class="ingredients-overlay-list">
+                  <li class="ingredients-overlay-active-card">berries</li>
+                  <li class="ingredients-overlay-link-card">
+                    <a class="ingredients-overlay-link" href="#tb">the benefits</a>
+                  </li>
+                </ul>
+                <p class="ingredients-overlay-text">
+                  Fresh berries chocolate combines the tart sweetness of berries
+                  with rich chocolate. This vibrant mix offers a refreshing and
+                  fruity explosion, perfect for a summery indulgence.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--
+        |============================
+        | SECTION 4. HOW IT'S MADE
+        |============================
+      -->
+      <section class="section" id="him">
+        <div class="him container">
+          <h2 class="him-header header-two">
+            How it's <span class="text-accent">made?</span>
+          </h2>
+          <div class="him-container">
+            <img
+              class="him-mob-image image"
+              srcset="
+                ./images/how-its-made/image-mob@1x.png 1x,
+                ./images/how-its-made/image-mob@2x.png 2x
+              "
+              src="./images/how-its-made/image-mob@1x.png"
+              alt="hot chocolate from a whisk flows in a thin stream into a metal bowl"
+              width="335"
+              height="500"
+            />
+            <img
+              class="him-td-image image"
+              srcset="
+                ./images/how-its-made/image-td@1x.png 1x,
+                ./images/how-its-made/image-td@2x.png 2x
+              "
+              src="./images/how-its-made/image-td@1x.png"
+              alt="hot chocolate from a whisk flows in a thin stream into a metal bowl"
+              width="600"
+              height="400"
+            />
+            <div class="him-description-container">
+              <h3 class="him-description-header">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="him-description-list">
+                <li class="him-description-point">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="him-description-point">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="him-description-point">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="him-description-point">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="him-description-point">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+        |============================
+        | SECTION 5. REVIEWS
+        |============================
+      -->
+      <section class="last-section" id="cil">
+        <div class="container">
+          <h2 class="reviews-header header-two">
+            <span class="text-accent">Chocolate</span> is loved
+          </h2>
+          <ul class="reviews-list">
+            <li class="reviews-card">
+              <div class="reviews-user">
+                <img
+                  class="reviews-user-image image"
+                  srcset="
+                    ./images/reviews/img-01@1x.png 1x,
+                    ./images/reviews/img-01@2x.png 2x
+                  "
+                  src="./images/reviews/img-01@1x.png"
+                  alt="Simran Yadav"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="reviews-user-name"> SIMRAN YADAV </h3>
+              </div>
+              <p class="reviews-user-comment">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
+            <li class="reviews-card">
+              <div class="reviews-user">
+                <img
+                  class="reviews-user-image image"
+                  srcset="
+                    ./images/reviews/img-02@1x.png 1x,
+                    ./images/reviews/img-02@2x.png 2x
+                  "
+                  src="./images/reviews/img-02@1x.png"
+                  alt=" PETER ENGLAND "
+                  width="80"
+                  height="80"
+                />
+                <h3 class="reviews-user-name">YASH DAYAL</h3>
+              </div>
+              <p class="reviews-user-comment">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
+            <li class="reviews-card">
+              <div class="reviews-user">
+                <img
+                  class="reviews-user-image image"
+                  srcset="
+                    ./images/reviews/img-03@1x.png 1x,
+                    ./images/reviews/img-03@2x.png 2x
+                  "
+                  src="./images/reviews/img-03@1x.png"
+                  alt="Olena Kampusch"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="reviews-user-name">PRIYA SINGH </h3>
+              </div>
+              <p class="reviews-user-comment">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+          </ul>
+          <div class="rewies-container">
+            <span class="rewies-active"></span>
+            <span class="rewies-inactive"></span>
+            <span class="rewies-inactive"></span>
+          </div>
+          <section class="last-section" id="chocolate-is-loved">
+  <div class="container">
+    <h2 class="reviews-header header-two">
+      <span class="text-accent">Chocolate</span> is loved
+    </h2>
+    <!-- Assuming reviews exist above, omitted for brevity -->
+   <button class="reviews-button" type="button" data-modal-open>
+            Leave a review
+          </button>
+        </div>
+      </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-close-button" type="button" data-modal-close>
+            <svg class="modal-close-button-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <h2 class="modal-header">
+            Please help us <span class="text-accent">improve</span>
+          </h2>
+          <form id="review-form" class="review-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Rating
+              <select name="rating" required>
+                <option value="">Select rating</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+              </select>
+            </label>
+            <label>
+              Your Feedback
+              <textarea name="comment" placeholder="Tell us what you think" required></textarea>
+            </label>
+            <button type="submit">Submit Review</button>
+          </form>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-thank-you-modal>
+        <div class="modal">
+          <button class="modal-close-button" type="button" data-thank-you-modal-close>
+            <svg class="modal-close-button-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <h2 class="modal-header">
+            Thank you so much for valuable <span class="text-accent">review</span>
+          </h2>
+          <p>We appreciate it!</p>
+        </div>
+      </div>
+      <style>
+        .reviews-button {
+          background-color: #f97316;
+          color: white;
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 9999px;
+          font-weight: 500;
+          cursor: pointer;
+          display: block;
+          margin: 1rem auto;
+        }
+        .reviews-button:hover {
+          background-color: #ea580c;
+        }
+        .backdrop {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1001;
+        }
+        .backdrop.is-hidden {
+          display: none !important;
+        }
+        .modal {
+          background: white;
+          padding: 2rem;
+          border-radius: 8px;
+          max-width: 500px;
+          width: 90%;
+          position: relative;
+          text-align: center;
+        }
+        .dark-mode .modal {
+          background: #2a2a2a;
+          color: #fff;
+        }
+        .modal-close-button {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+        .modal-close-button-icon {
+          width: 24px;
+          height: 24px;
+        }
+        .modal-header {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+        .modal-header span {
+          color: #f97316;
+        }
+        .review-form {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          text-align: left;
+        }
+        .review-form label {
+          font-weight: 500;
+        }
+        .review-form input,
+        .review-form textarea,
+        .review-form select {
+          width: 100%;
+          padding: 0.5rem;
+          border: 1px solid #d1d5db;
+          border-radius: 4px;
+          font-size: 1rem;
+        }
+        .dark-mode .review-form input,
+        .dark-mode .review-form textarea,
+        .dark-mode .review-form select {
+          background: #333;
+          border-color: #444;
+          color: #fff;
+        }
+        .review-form textarea {
+          resize: vertical;
+          min-height: 100px;
+        }
+        .review-form button {
+          background-color: #f97316;
+          color: white;
+          padding: 0.75rem;
+          border: none;
+          border-radius: 4px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        .review-form button:hover {
+          background-color: #ea580c;
+        }
+        .modal p {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+        }
+        .reviews-user-comment::after {
+          content: '';
+          display: block;
+          margin-top: 0.5rem;
+          font-size: 1rem;
+          color: #f97316;
+        }
+      </style>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const openModalBtn = document.querySelector('[data-modal-open]');
+          const closeModalBtn = document.querySelector('[data-modal-close]');
+          const modal = document.querySelector('[data-modal]');
+          const reviewForm = document.querySelector('#review-form');
+          const thankYouModal = document.querySelector('[data-thank-you-modal]');
+          const closeThankYouBtn = document.querySelector('[data-thank-you-modal-close]');
+          const reviewsList = document.querySelector('.reviews-list');
+          
+          if (!openModalBtn) console.error('Open modal button not found');
+          if (!closeModalBtn) console.error('Close modal button not found');
+          if (!modal) console.error('Form modal not found');
+          if (!reviewForm) console.error('Review form not found');
+          if (!thankYouModal) console.error('Thank-you modal not found');
+          if (!closeThankYouBtn) console.error('Close thank-you button not found');
+          
+          openModalBtn?.addEventListener('click', () => {
+            modal.classList.remove('is-hidden');
+            document.body.style.overflow = 'hidden';
+            console.log('Form modal opened');
+          });
+          
+          closeModalBtn?.addEventListener('click', () => {
+            modal.classList.add('is-hidden');
+            document.body.style.overflow = '';
+            console.log('Form modal closed');
+          });
+          
+          modal?.addEventListener('click', (e) => {
+            if (e.target === modal) {
+              modal.classList.add('is-hidden');
+              document.body.style.overflow = '';
+              console.log('Form modal closed via backdrop');
+            }
+          });
+          
+          closeThankYouBtn?.addEventListener('click', () => {
+            thankYouModal.classList.add('is-hidden');
+            document.body.style.overflow = '';
+            console.log('Thank-you modal closed');
+          });
+          
+          thankYouModal?.addEventListener('click', (e) => {
+            if (e.target === thankYouModal) {
+              thankYouModal.classList.add('is-hidden');
+              document.body.style.overflow = '';
+              console.log('Thank-you modal closed via backdrop');
+            }
+          });
+          
+          document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+              if (modal && !modal.classList.contains('is-hidden')) {
+                modal.classList.add('is-hidden');
+                document.body.style.overflow = '';
+                console.log('Form modal closed via Esc');
+              }
+              if (thankYouModal && !thankYouModal.classList.contains('is-hidden')) {
+                thankYouModal.classList.add('is-hidden');
+                document.body.style.overflow = '';
+                console.log('Thank-you modal closed via Esc');
+              }
+            }
+          });
+          
+          reviewForm?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log('Form submit triggered');
+            const name = reviewForm.querySelector('[name="name"]').value;
+            const rating = reviewForm.querySelector('[name="rating"]').value;
+            const comment = reviewForm.querySelector('[name="comment"]').value;
+            const newReview = { name, rating, comment, id: Date.now() };
+            const reviews = JSON.parse(localStorage.getItem('reviews') || '[]');
+            reviews.push(newReview);
+            localStorage.setItem('reviews', JSON.stringify(reviews));
+            const stars = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+            const li = document.createElement('li');
+            li.className = 'reviews-card';
+            li.innerHTML = `
+              <div class="reviews-user">
+                <img class="reviews-user-image image" src="./images/reviews/placeholder.png" alt="${name}" width="80" height="80" loading="lazy"/>
+                <h3 class="reviews-user-name">${name}</h3>
+              </div>
+              <p class="reviews-user-comment">${comment} (${stars})</p>
+            `;
+            reviewsList.prepend(li);
+            modal.classList.add('is-hidden');
+            thankYouModal.classList.remove('is-hidden');
+            document.body.style.overflow = 'hidden';
+            console.log('Switched to thank-you modal');
+            reviewForm.reset();
+          });
+          
+          const savedReviews = JSON.parse(localStorage.getItem('reviews') || '[]');
+          savedReviews.forEach(review => {
+            const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
+            const li = document.createElement('li');
+            li.className = 'reviews-card';
+            li.innerHTML = `
+              <div class="reviews-user">
+                <img class="reviews-user-image image" src="./images/reviews/placeholder.png" alt="${review.name}" width="80" height="80" loading="lazy"/>
+                <h3 class="reviews-user-name">${review.name}</h3>
+              </div>
+              <p class="reviews-user-comment">${review.comment} (${stars})</p>
+            `;
+            reviewsList.prepend(li);
+          });
+        });
+      </script>
+<p style="font-size: 22px;">
+Harmony Chocolate to bas dil se dil <span style="color: #f97316;">safarni</span> ka hai! Ye desi swad wala chocolate har <span style="color: #f97316;">bite</span> mein pyaar aur khushi bhar deta hai, jaise ghar ki mitti ki <span style="color: #f97316;">khushboo</span>. Elaichi, daalchini, aur fresh berries ke zayke ke <span style="color: #f97316;">saath</span>, ye sirf chocolate nahi, ek chhota sa jashn hai <span style="color: #f97316;">jo</span> muh mein ghulkar yaadon ko taaza kar deta hai. Banaya gaya hai pure dil se, bilkul apnepan wale andaaz mein, taaki har koi iski mithas mein kho <span style="color: #f97316;">jaye</span>!
+</p>
+     <!--
+        |============================
+        | SECTION 6. FEATURED IMAGES
+        |============================
+      -->
+      <section class="featured-images-section">
+        <div class="container">
+          <h2 class="featured-images-header header-two">
+             <span class="text-accent"> </span>
+          </h2>
+          <div class="featured-images-container">
+            <img
+              class="featured-image image"
+              srcset="
+                ./images/featured/img01@1x.png 1x,
+                ./images/featured/img01@2x.png 2x
+              "
+              src="./images/featured/img01@1x.png"
+              alt="chocolate creation 1"
+              width="550"
+              height="400"
+            />
+            <img
+              class="featured-image image"
+              srcset="
+                ./images/featured/img02@1x.png 1x,
+                ./images/featured/img02@2x.png 2x
+              "
+              src="./images/featured/img02@1x.png"
+              alt="chocolate creation 2"
+              width="550"
+              height="400"
+            />
+          </div>
+        </div>
+      </section>
+      <!--
+        |============================
+        | SECTION 7. VIDEO
+        |============================
+      -->
+      <section class="video-section">
+        <div class="container">
+          <h2 class="video-header header-two">
+            Watch Our Chocolate Making Process
+            <span class="text-accent">Live</span>
+          </h2>
+          <div class="video-container">
+            <video controls class="video-player" poster="./images/video-poster.png">
+              <source src="./videos/my-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--
+      |============================
+      | FOOTER
+      |============================
+    -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top-container">
+          <h2 class="footer-header">
+            <span class="text-accent">Chocolate</span> a delicious cure for a
+            bad day
+          </h2>
+          <address class="footer-address">
+            <p class="footer-address-header">Contact us</p>
+            <ul class="footer-address-list">
+              <li class="footer-address-card">
+                <a class="footer-address-link" href="tel:+919821128187"
+                  >+91 (98) 211-28-187</a
+                >
+              </li>
+              <li class="footer-address-card">
+                <a class="footer-address-link" href="mailto:info@simplychocolate.com"
+                  >info@harmonychocolate.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-bottom-container">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-card">
+              <a class="footer-nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="footer-nav-card">
+              <a class="footer-nav-link" href="#him">How it's made?</a>
+            </li>
+            <li class="footer-nav-card footer-nav-card-mob">
+              <a class="footer-nav-link" href="">Our products</a>
+            </li>
+            <li class="footer-nav-card footer-nav-card-mob">
+              <a class="footer-nav-link" href="">Top sellers</a>
+            </li>
+            <li class="footer-nav-card">
+              <a class="footer-nav-link" href="#cil">Chocolate is loved</a>
+            </li>
+          </ul>
+          <form class="subscribe-form">
+            <label class="subscribe-form-label">
+              <input
+                class="subscribe-form-input"
+                name="subscribe-form-input"
+                type="email"
+                placeholder="Enter your email"
+              />
+            </label>
+            <button class="subscribe-form-button" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!--
+      |============================
+      | MOBILE MENU
+      |============================
+    -->
+    <div class="menu-hamburger-container js-menu-container" id="mobile-menu">
+      <button class="menu-hamburger-close-button js-close-menu">
+        <svg class="menu-hamburger-close-icon" width="28" height="28">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav-container">
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="#him">How it's made?</a>
+        </li>
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="#cil">Chocolate is Loved</a>
+        </li>
+      </ul>
+      <ul class="mobile-social-list">
+        <li>
+          <a
+            class="mobile-social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg class="mobile-social-icon" width="22" height="22">
+              <use href="./images/icons/instagram"></use></svg
+          ></a>
+        </li>
+        <li>
+           <a
+            class="mobile-social-link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg class="mobile-social-icon" width="20" height="20">
+              <use href="./images/icons/twitter"></use></svg
+          ></a>
+        </li>
+             </ul>
+    </div>
+    <!--
+      |============================
+      | MODAL WINDOW
+      |============================
+    -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" type="button" data-modal-close>
+          <svg class="modal-close-button-icon" width="24" height="24">
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <h2 class="modal-invitation header-two">
+          leave a review <br />
+          about <span class="text-accent">our chocolate</span>
+        </h2>
+      </div>
+    </div>
+    <!--
+      |============================
+      | JS SCRIPTS
+      |============================
+    -->
+    <!-- Mobile menu script -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- Modal window script -->
+    <script src="./js/modal.js"></script>
+    <!-- Theme toggle script -->
+    <script src="./js/theme-toggle.js"></script>
+  </body>
+</html>
